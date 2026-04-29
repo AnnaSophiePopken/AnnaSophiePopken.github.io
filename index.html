@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anna Sophie Popken — Portfolio</title>
+  <meta name="description" content="Portfolio van Anna Sophie Popken — graphic design, branding, illustration." />
+  <link rel="stylesheet" href="style.css" />
+<link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#content">Sla navigatie over</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+                 <img src="images/favicon.png" alt="logo" class="anna-logo">
+<div class="brand-text">
+        <span class="brand__name">Anna Sophie Popken</span>
+        <span class="brand__role">Grafisch ontwerp</span>
+        </div>
+      </a>
+      <nav class="nav">
+      <a href="index.html"><u>Home</u></a>
+      <a href="hortus.html">Hortus</a>
+      <a href="maatschappelijkecampagnes.html">Maatschappelijk</a>
+      <a href="surface.html">Surface</a>
+      <a href="overmij.html">Over mij</a>
+      </nav>
+    </div>
+  </header>
+
+
+<main id="content">
+   <section id="hero-home" class="hero">
+  <div class="container hero-inner"> 
+  </div>
+
+      <div class="container">
+        <div class="hero-actions">
+          <a class="button" href="#vaardigheden">Vaardigheden</a>
+          <a class="button button--ghost" href="#contact">Mail mij</a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Uitgelichte projecten</h2>
+      
+        </div>
+
+   <div class="grid">
+
+  <article class="card">
+    <a class="card__link" href="hortus.html">
+      <div class="card__media">
+        <img src="images/StinzenBanner.png" alt="Plantenmarkt poster" loading="lazy">
+      </div>
+      <div class="card__meta">
+        <h3>Stinzenplanten Banner</h3>
+        <p>2026</p>
+      </div>
+    </a>
+  </article>
+
+  <article class="card">
+    <a class="card__link" href="maatschappelijkecampagnes.html">
+      <div class="card__media">
+        <img src="images/MockupCardBox.png" alt="Poster 2" loading="lazy">
+      </div>
+      <div class="card__meta">
+        <h3>Kaartspel RUG</h3>
+        <p>2026</p>
+      </div>
+    </a>
+  </article>
+
+  <article class="card">
+    <a class="card__link" href="surface.html">
+      <div class="card__media">
+        <img src="images/PosterSurface.png" alt="Poster 3" loading="lazy">
+      </div>
+      <div class="card__meta">
+        <h3>Poster Aclo</h3>
+        <p>2024</p>
+      </div>
+    </a>
+  </article>
+  
+</div>
+ 
+<br>
+<br>
+      
+    <section id="vaardigheden" class="section section--alt">
+      <div class="container two-col">
+        <div>
+          <h3>Skill set</h3>
+          <p class="lead">
+           Als grafisch ontwerper werk ik graag aan heldere visuele verhalen. <br> Mijn interesse ligt bij culturele organisaties, natuurprojecten en maatschappelijke initiatieven, waar inhoud en vorm echt samenkomen. 
+           In mijn werk vertaal ik complexe ideeën naar rustige, toegankelijke beelden, met veel aandacht voor typografie, illustratie en detail. 
+           <br>Voor mij is het belangrijk dat ontwerp niet alleen mooi is, maar ook iets vertelt en betekenis heeft.
+
+          </p>
+
+          <ul class="list">
+            <li>Branding & visuele identiteit</li>
+            <li>Fysiek drukwerk</li>
+            <li>Illustraties</li>
+          </ul>
+        </div>
+
+        <div class="about-card">
+          <div class="about-card__inner">
+            <p class="kicker">Details</p>
+            <p><strong>Tools:</strong> Adobe Illustrator, Adobe Photoshop, Adobe InDesign, Figma</p>
+            <p><strong>Focus:</strong> helder, rustig, natuur/onderzoek/maatschappij</p>
+            <p><strong>Beschikbaar:</strong> freelance / loondienst</p>
+            <a class="button button--small" href="#contact">Bekijk CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+    <section id="contact" class="section">
+      <div class="container contact">
+        <div class="section-head">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="contact-row">
+          <a class="contact-pill" href="mailto:aspopken@gmail.com">Mail mij</a>
+          <a class="contact-pill" href="https://www.linkedin.com/in/anna-sophie-popken-62a085184/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="contact-pill" href="https://www.instagram.com/annasophieeeeeeeee/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+        
+      </div>
+
+     <footer class="footer">
+        <p class="footer-text">© <span id="year"></span> Anna Sophie Popken</p>
+        <a href="#top" class="back-to-top">↑</a>
+     </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+<script>
+  const btn = document.querySelector('.back-to-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      btn.style.opacity = '1';
+      btn.style.pointerEvents = 'auto';
+    } else {
+      btn.style.opacity = '0';
+      btn.style.pointerEvents = 'none';
+    }
+  });
+</script>
