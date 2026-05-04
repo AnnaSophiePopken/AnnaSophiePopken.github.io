@@ -21,7 +21,10 @@
         <span class="brand__role">Grafisch ontwerp</span>
         </div>
       </a>
-      <nav class="nav">
+       <button class="nav-toggle" id="navToggle">
+      ☰
+    </button>
+     <nav class="nav" id="navMenu">
       <a href="index.html">Home</a>
       <a href="hortus.html"><u>Hortus</u></a>
       <a href="maatschappelijkecampagnes.html">Maatschappelijk</a>
@@ -29,6 +32,7 @@
       <a href="overmij.html">Over mij</a>
       </nav>
     </div>
+
   </header>
 
 
@@ -37,6 +41,11 @@
   <div class="container hero-inner"> 
   </div> 
  
+      <p class="mobile-text">Sinds eind zomer van 2025 ben ik als vrijwillig grafisch vormgever betrokken bij de Hortus Botanicus Haren. 
+       <br> Binnen de afdeling communicatie fungeer ik als aanspreekpunt voor het ontwerpteam en bewaak ik de voortgang van visuele 
+projecten.<br> Ik onderhoud contact met de drukkerij en interne afdelingen, en zorg ervoor dat deadlines 
+consistent worden gehaald, zowel voor mijn eigen werk als dat van collega’s.</p>
+
    </section>
 
 
@@ -405,6 +414,7 @@
   </script>
 </body>
 </html>
+
 <script>
   const btn = document.querySelector('.back-to-top');
 
@@ -416,5 +426,12 @@
       btn.style.opacity = '0';
       btn.style.pointerEvents = 'none';
     }
+  });
+  
+  const toggle = document.getElementById("navToggle");
+  const menu = document.getElementById("navMenu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
   });
 </script>

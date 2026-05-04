@@ -21,7 +21,10 @@
         <span class="brand__role">Grafisch ontwerp</span>
         </div>
       </a>
-      <nav class="nav">
+       <button class="nav-toggle" id="navToggle">
+      ☰
+    </button>
+     <nav class="nav" id="navMenu">
       <a href="index.html">Home</a>
       <a href="hortus.html">Hortus</a>
       <a href="maatschappelijkecampagnes.html">Maatschappelijk</a>
@@ -54,7 +57,7 @@
         <div class="contact-row">
           <a class="contact-pill" href="mailto:aspopken@gmail.com">Mail mij</a>
           <a class="contact-pill" href="https://www.linkedin.com/in/anna-sophie-popken-62a085184/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="contact-pill" href="https://www.instagram.com/annasophieeeeeeeee/" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="contact-pill" href="https://www.instagram.com/cre_anna22/" target="_blank" rel="noreferrer">Instagram</a>
         </div>
 
       
@@ -71,6 +74,13 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+      
+  const toggle = document.getElementById("navToggle");
+  const menu = document.getElementById("navMenu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
   </script>
 </body>
 </html>

@@ -21,7 +21,10 @@
         <span class="brand__role">Grafisch ontwerp</span>
         </div>
       </a>
-      <nav class="nav">
+       <button class="nav-toggle" id="navToggle">
+      ☰
+    </button>
+      <nav class="nav" id="navMenu">
       <a href="index.html">Home</a>
       <a href="hortus.html">Hortus</a>
       <a href="maatschappelijkecampagnes.html"><u>Maatschappelijk</u></a>
@@ -35,6 +38,7 @@
    <section id="hero-maatschappelijk" class="hero">
   <div class="container hero-inner"> 
   </div>
+  <p class="mobile-text">Voor opdrachtgevers als de Rijks Universiteit Groningen en Oxfam Novib, en om aandacht te schenken aan de oorlog in Ukraine, heb ik mij ingezet om betekenisvolle campagnes te ontwerpen, gericht op bewustwording en actie.</p>
    </section>
 
 
@@ -268,5 +272,12 @@
       btn.style.opacity = '0';
       btn.style.pointerEvents = 'none';
     }
+  });
+  
+  const toggle = document.getElementById("navToggle");
+  const menu = document.getElementById("navMenu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
   });
 </script>

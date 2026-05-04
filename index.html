@@ -21,7 +21,10 @@
         <span class="brand__role">Grafisch ontwerp</span>
         </div>
       </a>
-      <nav class="nav">
+       <button class="nav-toggle" id="navToggle">
+      ☰
+    </button>
+      <nav class="nav" id="navMenu">
       <a href="index.html"><u>Home</u></a>
       <a href="hortus.html">Hortus</a>
       <a href="maatschappelijkecampagnes.html">Maatschappelijk</a>
@@ -30,12 +33,14 @@
       </nav>
     </div>
   </header>
+  
 
 
 <main id="content">
    <section id="hero-home" class="hero">
   <div class="container hero-inner"> 
   </div>
+<p class="mobile-text">Grafisch ontwerp waarin vorm en betekenis samenkomen.</p>
 
       <div class="container">
         <div class="hero-actions">
@@ -120,7 +125,7 @@
             <p><strong>Tools:</strong> Adobe Illustrator, Adobe Photoshop, Adobe InDesign, Figma</p>
             <p><strong>Focus:</strong> helder, rustig, natuur/onderzoek/maatschappij</p>
             <p><strong>Beschikbaar:</strong> freelance / loondienst</p>
-            <a class="button button--small" href="#contact">Bekijk CV</a>
+            <a class="button button--small" href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -135,7 +140,7 @@
         <div class="contact-row">
           <a class="contact-pill" href="mailto:aspopken@gmail.com">Mail mij</a>
           <a class="contact-pill" href="https://www.linkedin.com/in/anna-sophie-popken-62a085184/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="contact-pill" href="https://www.instagram.com/annasophieeeeeeeee/" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="contact-pill" href="https://www.instagram.com/cre_anna22/" target="_blank" rel="noreferrer">Instagram</a>
         </div>
         
       </div>
@@ -164,4 +169,13 @@
       btn.style.pointerEvents = 'none';
     }
   });
+
+ 
+  const toggle = document.getElementById("navToggle");
+  const menu = document.getElementById("navMenu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+
 </script>

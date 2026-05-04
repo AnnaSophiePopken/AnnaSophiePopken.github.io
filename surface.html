@@ -21,7 +21,10 @@
         <span class="brand__role">Grafisch ontwerp</span>
         </div>
       </a>
-      <nav class="nav">
+       <button class="nav-toggle" id="navToggle">
+      ☰
+    </button>
+      <nav class="nav" id="navMenu">
       <a href="index.html">Home</a>
       <a href="hortus.html">Hortus</a>
       <a href="maatschappelijkecampagnes.html">Maatschappelijk</a>
@@ -35,7 +38,9 @@
    <section id="hero-surface" class="hero">
   <div class="container hero-inner"> 
   </div> 
- 
+ <p class="mobile-text">Tijdens mijn studententijd maakte ik als voorzitster enthousiast deel uit van de Surface Design Commissie (ook bekend als de MeukCie).
+   Naast mijn rol als contactpersoon met de drukkerij droeg ik, samen met mijn team, 
+   de verantwoordelijkheid voor het concept, het ontwerp en de realisatie van merchandise en promotionele uitingen.</p>
    </section>
 <section id="work" class="section">
       <div class="container">
@@ -314,5 +319,12 @@
       btn.style.opacity = '0';
       btn.style.pointerEvents = 'none';
     }
+  });
+
+  const toggle = document.getElementById("navToggle");
+  const menu = document.getElementById("navMenu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
   });
 </script>
