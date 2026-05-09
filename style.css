@@ -440,10 +440,10 @@ a{
 }
 .about-decor{
   position: absolute;
-  bottom: -60px;
-  right: 270px;
+  bottom: -90px;
+  right: 500px;
 
-  width: 400px; /* pas aan */
+  width: 350px; /* pas aan */
   height: auto;
 
   opacity: 0.9; /* optioneel subtiel */
